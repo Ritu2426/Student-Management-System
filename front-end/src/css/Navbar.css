@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  position: relative; 
+}
+
+.user-thumbnail {
+  width: 35px;
+  height: 45px;
+  border-radius: 75%;
+  margin-right: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.user-thumbnail.zoom-in {
+  transform: scale(1.1);
+}
+
+.username {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.logout-btn {
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  transform: scale(1.1);
+}
