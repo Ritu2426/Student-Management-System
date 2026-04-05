@@ -37,4 +37,3 @@ This project serves as the front-end interface for a Student Management System b
 - React
 - Redux
 - JavaScript
-- CSS-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
