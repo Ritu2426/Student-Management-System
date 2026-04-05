@@ -1,6 +1,6 @@
 # Student Management System Backend
 
-This project is a Node.js backend for a Student Management System. It provides RESTful APIs for authentication and student management, using Express and MongoDB.
+This project is a Node.js backend for a Student Management System. It provides RESTful APIs for authentication and student management, using Express and MySQL.
 
 ## Features
 - User authentication (login, register)
@@ -13,7 +13,7 @@ This project is a Node.js backend for a Student Management System. It provides R
 index.js                # Entry point
 package.json            # Project metadata and dependencies
 config/
-  database.js           # MongoDB connection setup
+  database.js           # MySQL connection setup
 controllers/
   authController.js     # Authentication logic
   studentController.js  # Student CRUD logic
@@ -37,8 +37,14 @@ routes/
    ```bash
    npm install
    ```
-3. **Configure MongoDB**
-   - Update the connection string in `config/database.js` if needed.
+3. **Configure MySQL**
+   - Set your database credentials in a `.env` file:
+     ```
+     DB_HOST=localhost
+     DB_USER=your_user
+     DB_PASSWORD=your_password
+     DB_DATABASE=your_database
+     ```
 4. **Run the server**
    ```bash
    node index.js
@@ -51,17 +57,11 @@ routes/
 
 ## Minor Details
 - Uses Express for routing and middleware
-- MongoDB for data storage (via Mongoose)
+- MySQL for data storage (via mysql2)
 - Error and validation handled via custom middlewares
 - Modular code for easy maintenance
 - Environment variables can be used for sensitive configs
 
 ## Requirements
 - Node.js >= 14
-- MongoDB instance
-
-## License
-MIT
-
-## Author
-Ritu T
+- MySQL instance (e.g. MySQL Workbench)
